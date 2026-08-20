@@ -488,3 +488,136 @@ footer a {
     }
 }
 
+/* ===== CADASTRO DO CLIENTE - ALEXA SOLUÇÕES ===== */
+
+.cadastro-cliente {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #0d0d12, #181322);
+    border: 1px solid var(--roxo);
+    border-radius: 24px;
+    box-shadow: 0 0 35px rgba(116, 31, 255, 0.25);
+}
+
+.cadastro-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cadastro-titulo h2 {
+    color: var(--branco);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cadastro-titulo p {
+    color: var(--cinza);
+    font-size: 16px;
+}
+
+.cadastro-cliente form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    color: var(--dourado);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: #08080c;
+    color: var(--branco);
+    border: 1px solid #5b3a8a;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--roxo);
+    box-shadow: 0 0 12px rgba(116, 31, 255, 0.35);
+}
+
+.campo textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.btn-cadastro {
+    grid-column: 1 / -1;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, var(--roxo), var(--dourado));
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cadastro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(116, 31, 255, 0.35);
+}
+
+.cadastro-contato {
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    background: #0a0a0f;
+    border-radius: 15px;
+    border: 1px solid #5b3a8a;
+}
+
+.cadastro-contato p {
+    color: var(--branco);
+    margin-bottom: 12px;
+}
+
+.cadastro-contato a {
+    color: var(--dourado);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cadastro-contato a:hover {
+    color: var(--roxo-claro);
+}
+
+@media (max-width: 700px) {
+
+    .cadastro-cliente {
+        margin: 30px 15px;
+        padding: 25px 18px;
+    }
+
+    .cadastro-cliente form {
+        grid-template-columns: 1fr;
+    }
+
+    .cadastro-titulo h2 {
+        font-size: 26px;
+    }
+
+    .btn-cadastro {
+        grid-column: auto;
+    }
+}
+
