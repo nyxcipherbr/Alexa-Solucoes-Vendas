@@ -198,8 +198,92 @@
     <p>
         © 2026 Alexa Soluções
     </p>
+</footer> <!-- CADASTRO DO CLIENTE -->
+<section class="cadastro-cliente" id="cadastro">
 
-</footer>
+    <div class="cadastro-titulo">
+        <span>📋</span>
+        <h2>Quero contratar</h2>
+        <p>Preencha seus dados e fale diretamente com a Alexa.</p>
+    </div>
+
+    <form id="formCadastro">
+
+        <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="campo">
+            <label for="whatsapp">WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(66) 99999-9999" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+        </div>
+
+        <div class="campo">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+        </div>
+
+        <div class="campo">
+            <label for="documento">CPF ou CNPJ</label>
+            <input type="text" id="documento" name="documento" placeholder="Digite seu CPF ou CNPJ">
+        </div>
+
+        <div class="campo">
+            <label for="servico">Tipo de serviço</label>
+            <select id="servico" name="servico" required>
+                <option value="">Selecione</option>
+                <option value="Internet Fibra">Internet Fibra</option>
+                <option value="Internet Móvel">Internet Móvel</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="provedor">Provedor / Operadora</label>
+            <select id="provedor" name="provedor" required>
+                <option value="">Selecione</option>
+                <option value="Pedranet">Pedranet</option>
+                <option value="Nio">Nio</option>
+                <option value="Amigo">Amigo</option>
+                <option value="Vivo">Vivo</option>
+                <option value="Claro">Claro</option>
+                <option value="TIM">TIM</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="plano">Plano desejado</label>
+            <input type="text" id="plano" name="plano" placeholder="Ex.: 700 Mega">
+        </div>
+
+        <div class="campo">
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" name="observacoes" rows="4"
+                placeholder="Digite alguma informação que queira nos informar"></textarea>
+        </div>
+
+        <button type="submit" class="btn-cadastro">
+            🚀 QUERO CONTRATAR
+        </button>
+
+    </form>
+
+    <div class="cadastro-contato">
+        <p>Prefere falar diretamente com a Alexa?</p>
+
+        <a href="https://wa.me/5566999536712" target="_blank">
+            💬 Falar com Alexa pelo WhatsApp
+        </a>
+    </div>
+
+</section>
+<!-- FIM DO CADASTRO -->
+
 
 </body>
 </html>
